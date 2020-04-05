@@ -6,4 +6,3 @@ for item in dirListing:
     # os.path.join(os.getcwd(), "emails/uploads", item)
     os.rename(os.path.join(os.getcwd(), "emails/uploads", item),
               os.path.join(os.getcwd(), "emails/old", item))
-

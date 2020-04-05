@@ -6,21 +6,22 @@
 
 I like instagram. I just hate how easily I can get distracted with it and lose time. I like to post things to my instagram. My family likes to see pictures of my little one.
 
+### First python project so still working on set up and ways to run it. Files are seperated currently for ease of testing for me. If you see anything I could improve let me know!
+
 ## Configuration
 
-Gmail login Info:
+Gmail download/login info example:
 
 ```
-Change this information to your gmail login information
+import os
+import downloadEmail
+
 emailAddress = os.environ.get("python_email")
 password = os.environ.get("python_password")
-```
 
-Gmail Search info:
+downloadEmail.downloadEmails(emailAddress, password, 'therealnicola@gmail.com')
 
-```
-Currently have it searching for my own email address, could remove all this and have it search through all emails. Or change it to the email you would send the image and text from
-result, messageFromMe = mail.search(None, 'FROM', '"therealnicola@gmail.com"')
+Currently have it searching for my own email address. Change this to the email address you'd like to download the information from.
 ```
 
 Selenium webDriver
