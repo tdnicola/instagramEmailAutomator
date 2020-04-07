@@ -4,6 +4,6 @@ import os
 import downloadEmail
 
 emailAddress = os.environ.get("python_email")
-password = os.environ.get("python_password")
+emailPw = os.environ.get("python_password")
 
-downloadEmail.downloadEmails(emailAddress, password, 'therealnicola@gmail.com')
+downloadEmail.downloadEmails(emailAddress, emailPw, 'therealnicola@gmail.com')
